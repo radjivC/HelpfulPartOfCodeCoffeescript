@@ -8,4 +8,9 @@ server = http.createServer (req, res) ->
         'Content-Length':   data.length
     res.end data
 
+io = require 'socket.io'
+io.sockets.on 'connection', (socket) ->
+    console.log('Initializing Socket');
+
+
 server.listen 8000
