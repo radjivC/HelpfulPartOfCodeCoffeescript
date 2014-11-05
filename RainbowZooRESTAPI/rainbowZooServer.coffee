@@ -1,3 +1,11 @@
+# raibowZooServer.coffee
+#
+# created by Radjiv Carrere
+# 1 november 2014
+#
+# License MIT
+#
+
 express = require("express")
 unicorn = require("./routes/unicorns")
 app = express()
